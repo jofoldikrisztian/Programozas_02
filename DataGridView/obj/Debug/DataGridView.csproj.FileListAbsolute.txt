@@ -1,0 +1,10 @@
+D:\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Excercise\Programozas_02_Labor\DataGridView\bin\Debug\DataGridView.exe.config
+D:\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Excercise\Programozas_02_Labor\DataGridView\bin\Debug\DataGridView.exe
+D:\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Excercise\Programozas_02_Labor\DataGridView\bin\Debug\DataGridView.pdb
+D:\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Excercise\Programozas_02_Labor\DataGridView\obj\Debug\DataGridView.csprojAssemblyReference.cache
+D:\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Excercise\Programozas_02_Labor\DataGridView\obj\Debug\DataGridView.PhoneBookFrm.resources
+D:\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Excercise\Programozas_02_Labor\DataGridView\obj\Debug\DataGridView.Properties.Resources.resources
+D:\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Excercise\Programozas_02_Labor\DataGridView\obj\Debug\DataGridView.csproj.GenerateResource.cache
+D:\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Excercise\Programozas_02_Labor\DataGridView\obj\Debug\DataGridView.csproj.CoreCompileInputs.cache
+D:\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Excercise\Programozas_02_Labor\DataGridView\obj\Debug\DataGridView.exe
+D:\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Excercise\Programozas_02_Labor\DataGridView\obj\Debug\DataGridView.pdb

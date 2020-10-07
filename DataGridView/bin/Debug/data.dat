@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<AppData xmlns="http://tempuri.org/AppData.xsd">
+  <PhoneBook>
+    <PhoneNumber>(444) 444-4444</PhoneNumber>
+    <FullName>Jóföldi Krisztián</FullName>
+    <Email>krisztianjofoldi@gmail.com</Email>
+    <Address>Királyhágó utca</Address>
+    <ID>-1</ID>
+  </PhoneBook>
+  <PhoneBook>
+    <PhoneNumber>(334) 214-2356</PhoneNumber>
+    <FullName>Gazsó D</FullName>
+    <Email>vakla@gmail.com</Email>
+    <Address>fdasfasdfasd
+ghjgfnjhgf</Address>
+    <ID>-2</ID>
+  </PhoneBook>
+  <PhoneBook>
+    <ID>-3</ID>
+  </PhoneBook>
+  <PhoneBook>
+    <ID>-4</ID>
+  </PhoneBook>
+</AppData>
