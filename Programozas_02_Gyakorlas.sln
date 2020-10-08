@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackBar", "TrackBar\TrackB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotifyIcon", "NotifyIcon\NotifyIcon.csproj", "{077D6B7E-2C65-42AE-86EF-ABD2EF05B639}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serializer", "Serializer\Serializer.csproj", "{A9838954-525D-4E76-8879-2B7565CA81B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{077D6B7E-2C65-42AE-86EF-ABD2EF05B639}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{077D6B7E-2C65-42AE-86EF-ABD2EF05B639}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{077D6B7E-2C65-42AE-86EF-ABD2EF05B639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9838954-525D-4E76-8879-2B7565CA81B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9838954-525D-4E76-8879-2B7565CA81B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9838954-525D-4E76-8879-2B7565CA81B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9838954-525D-4E76-8879-2B7565CA81B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
