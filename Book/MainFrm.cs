@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 
@@ -13,10 +7,7 @@ namespace Book
 {
     public partial class MainFrm : Form
     {
-
-
         XmlDocument xmlDoc = new XmlDocument();
-
         OpenFileDialog ofd = new OpenFileDialog();
 
         public MainFrm()
@@ -26,13 +17,11 @@ namespace Book
 
         private void MainFrm_Load(object sender, EventArgs e)
         {
-            btnAdd.Enabled = btnModify.Enabled = btnRemove.Enabled = false;
+            btnAddNode.Enabled = btnModify.Enabled = btnRemoveBook.Enabled = false;
         }
-
-        private void btnloadXml_Click(object sender, EventArgs e)
+        private void btnLoadXml_Click(object sender, EventArgs e)
         {
             Cursor = Cursors.WaitCursor;
-
             ofd.Title = "Open XML Document";
             ofd.Filter = "XML Files (*.xml)|*.xml";
             ofd.FileName = Application.StartupPath + "\\example.xml";
@@ -40,15 +29,14 @@ namespace Book
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 trVw.Nodes.Clear();
-                btnAdd.Enabled = true;
-
+                btnAddNode.Enabled = true;
                 try
                 {
                     xmlDoc.Load(ofd.FileName);
                 }
-                catch (XmlException xmlException)
+                catch (XmlException xmlEx)
                 {
-                    MessageBox.Show(xmlException.Message);
+                    MessageBox.Show(xmlEx.Message);
                 }
                 catch (Exception ex)
                 {
@@ -61,25 +49,19 @@ namespace Book
                 reloadTreeView();
                 fillIsbns();
                 trVw.Nodes[0].ExpandAll();
-
             }
             else
-            {
                 Cursor = Cursors.Default;
-            }
         }
-
         private void addNode(XmlNode inXmlNode, TreeNode inTreeNode)
         {
             if (inXmlNode.HasChildNodes)
             {
                 XmlNodeList xmlNodes = inXmlNode.ChildNodes;
-
                 for (int i = 0; i < xmlNodes.Count; ++i)
                 {
                     XmlNode xmlNode = inXmlNode.ChildNodes[i];
                     if (xmlNode.Name == "book")
-                    {
                         try
                         {
                             inTreeNode.Nodes.Add(new TreeNode(xmlNode.Name + " (ISBN: " + xmlNode.Attributes["isbn"].Value + ")"));
@@ -88,19 +70,15 @@ namespace Book
                         {
                             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
-                    }
                     else
-                    {
                         inTreeNode.Nodes.Add(new TreeNode(xmlNode.Name));
-                        TreeNode treeNode = inTreeNode.Nodes[i];
-                        addNode(xmlNode, treeNode);
-                    }
+                    TreeNode treeNode = inTreeNode.Nodes[i];
+                    addNode(xmlNode, treeNode);
                 }
             }
             else
             {
                 if (inXmlNode.Name == "author")
-                {
                     try
                     {
                         inTreeNode.Text = inXmlNode.Attributes["fname"].Value + " " + inXmlNode.Attributes["lname"].Value;
@@ -109,23 +87,19 @@ namespace Book
                     {
                         MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-                }
                 else if (inXmlNode.ParentNode.Name == "review")
-                {
                     try
                     {
-                        inTreeNode.Text = inXmlNode.InnerText + " (evaluation: " +
-                                          inXmlNode.ParentNode.Attributes["eval"].Value + ")";
+                        inTreeNode.Text = inXmlNode.InnerText + " (evaluation: " + inXmlNode.ParentNode.Attributes["eval"].Value + ")";
                     }
                     catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-                }
-                else inTreeNode.Text = inXmlNode.InnerText;
+                else
+                    inTreeNode.Text = inXmlNode.InnerText;
             }
         }
-
         private void fillIsbns()
         {
             cmbBxIsbn.Items.Clear();
@@ -208,7 +182,7 @@ namespace Book
         {
             List<XmlAttribute> fnames = new List<XmlAttribute>(), lnames = new List<XmlAttribute>();
 
-            foreach (string line in txtBxName.Lines)
+            foreach (string line in txtBxFullName.Lines)
             {
                 XmlAttribute fname = xmlDoc.CreateAttribute("fname"), lname = xmlDoc.CreateAttribute("lname");
                 try
@@ -316,7 +290,7 @@ namespace Book
         private void updateAuthors(XmlNode authors)
         {
             int i = 0, j;
-            foreach (string line in txtBxName.Lines)
+            foreach (string line in txtBxFullName.Lines)
             {
                 string[] names = line.Split(' ');
                 if (names.Length != 2)
@@ -398,8 +372,8 @@ namespace Book
         }
         private void setButtonsToAdd()
         {
-            btnAdd.Enabled = true;
-            btnRemove.Enabled = btnModify.Enabled = false;
+            btnAddNode.Enabled = true;
+            btnRemoveBook.Enabled = btnModify.Enabled = false;
         }
         private void clearInputBoxes()
         {
@@ -442,7 +416,7 @@ namespace Book
                     if (authorsXmlNode.LastChild != author)
                         authors += Environment.NewLine;
                 }
-                txtBxName.Text = authors;
+                txtBxFullName.Text = authors;
             }
 
             XmlNode reviewXmlNode = xmlDoc.SelectSingleNode("//books/book[@isbn='" + cmbBxIsbn.SelectedItem + "']/reviews");
@@ -465,10 +439,8 @@ namespace Book
         }
         private void setButtonsToModify()
         {
-
-            btnAdd.Enabled = false;
-            btnModify.Enabled = btnRemove.Enabled = true;
-
+            btnAddNode.Enabled = false;
+            btnModify.Enabled = btnRemoveBook.Enabled = true;
         }
     }
 }

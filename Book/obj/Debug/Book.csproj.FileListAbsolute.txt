@@ -13,3 +13,13 @@ D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejleszté
 D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Excercise\Programozas_02_Labor\Book\obj\Debug\Book.csproj.GenerateResource.cache
 D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Excercise\Programozas_02_Labor\Book\obj\Debug\Book.exe
 D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Excercise\Programozas_02_Labor\Book\obj\Debug\Book.pdb
+D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Programozas 2 - Gyakorlas\Programozas_02_Gyakorlas\Book\obj\Debug\Book.csprojAssemblyReference.cache
+D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Programozas 2 - Gyakorlas\Programozas_02_Gyakorlas\Book\obj\Debug\Book.MainFrm.resources
+D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Programozas 2 - Gyakorlas\Programozas_02_Gyakorlas\Book\obj\Debug\Book.csproj.GenerateResource.cache
+D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Programozas 2 - Gyakorlas\Programozas_02_Gyakorlas\Book\obj\Debug\Book.exe
+D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Programozas 2 - Gyakorlas\Programozas_02_Gyakorlas\Book\obj\Debug\Book.pdb
+D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Programozas 2 - Gyakorlas\Programozas_02_Gyakorlas\Book\bin\Debug\Book.exe.config
+D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Programozas 2 - Gyakorlas\Programozas_02_Gyakorlas\Book\bin\Debug\Book.exe
+D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Programozas 2 - Gyakorlas\Programozas_02_Gyakorlas\Book\bin\Debug\Book.pdb
+D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Programozas 2 - Gyakorlas\Programozas_02_Gyakorlas\Book\obj\Debug\Book.Properties.Resources.resources
+D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Programozas 2 - Gyakorlas\Programozas_02_Gyakorlas\Book\obj\Debug\Book.csproj.CoreCompileInputs.cache

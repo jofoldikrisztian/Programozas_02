@@ -17,3 +17,14 @@ D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejleszté
 D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Excercise\Programozas_02_Labor\TreeView\obj\Debug\TreeView.csproj.CoreCompileInputs.cache
 D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Excercise\Programozas_02_Labor\TreeView\obj\Debug\TreeView.exe
 D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Excercise\Programozas_02_Labor\TreeView\obj\Debug\TreeView.pdb
+D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Programozas 2 - Gyakorlas\Programozas_02_Gyakorlas\TreeView\bin\Debug\TreeView.exe.config
+D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Programozas 2 - Gyakorlas\Programozas_02_Gyakorlas\TreeView\bin\Debug\TreeView.exe
+D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Programozas 2 - Gyakorlas\Programozas_02_Gyakorlas\TreeView\bin\Debug\TreeView.pdb
+D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Programozas 2 - Gyakorlas\Programozas_02_Gyakorlas\TreeView\obj\Debug\TreeView.csprojAssemblyReference.cache
+D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Programozas 2 - Gyakorlas\Programozas_02_Gyakorlas\TreeView\obj\Debug\TreeView.MainForm.resources
+D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Programozas 2 - Gyakorlas\Programozas_02_Gyakorlas\TreeView\obj\Debug\TreeView.NewNodeForm.resources
+D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Programozas 2 - Gyakorlas\Programozas_02_Gyakorlas\TreeView\obj\Debug\TreeView.Properties.Resources.resources
+D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Programozas 2 - Gyakorlas\Programozas_02_Gyakorlas\TreeView\obj\Debug\TreeView.csproj.GenerateResource.cache
+D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Programozas 2 - Gyakorlas\Programozas_02_Gyakorlas\TreeView\obj\Debug\TreeView.csproj.CoreCompileInputs.cache
+D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Programozas 2 - Gyakorlas\Programozas_02_Gyakorlas\TreeView\obj\Debug\TreeView.exe
+D:\OneDrive - Dunaújvárosi Egyetem\Study\Fősuli\5. félév\Szoftverfejlesztési technológiák\Programozas 2 - Gyakorlas\Programozas_02_Gyakorlas\TreeView\obj\Debug\TreeView.pdb
