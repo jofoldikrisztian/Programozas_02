@@ -30,6 +30,8 @@ namespace Book
             {
                 trVw.Nodes.Clear();
                 btnAddNode.Enabled = true;
+
+                
                 try
                 {
                     xmlDoc.Load(ofd.FileName);

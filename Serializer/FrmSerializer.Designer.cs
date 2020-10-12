@@ -45,6 +45,7 @@
             this.rdBtnSoapXml = new System.Windows.Forms.RadioButton();
             this.rdBtnBinary = new System.Windows.Forms.RadioButton();
             this.sfdSave = new System.Windows.Forms.SaveFileDialog();
+            this.ofdLoad = new System.Windows.Forms.OpenFileDialog();
             this.grpBxSerializationType.SuspendLayout();
             this.grpBxLoad.SuspendLayout();
             this.grpBxSave.SuspendLayout();
@@ -83,7 +84,6 @@
             this.lblLoadedContent.Size = new System.Drawing.Size(83, 13);
             this.lblLoadedContent.TabIndex = 3;
             this.lblLoadedContent.Text = "Loaded Content";
-            this.lblLoadedContent.Click += new System.EventHandler(this.lblLoadedContent_Click);
             // 
             // btnSave
             // 
@@ -103,6 +103,7 @@
             this.btnLoad.TabIndex = 5;
             this.btnLoad.Text = "Load";
             this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // btnClose
             // 
@@ -219,6 +220,10 @@
             this.rdBtnBinary.UseVisualStyleBackColor = true;
             this.rdBtnBinary.CheckedChanged += new System.EventHandler(this.rdSave_CheckedChange);
             // 
+            // ofdLoad
+            // 
+            this.ofdLoad.FileName = "ofdLoad";
+            // 
             // Serializer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -263,6 +268,7 @@
         private System.Windows.Forms.RadioButton rdBtnSoapXml;
         private System.Windows.Forms.RadioButton rdBtnBinary;
         private System.Windows.Forms.SaveFileDialog sfdSave;
+        private System.Windows.Forms.OpenFileDialog ofdLoad;
     }
 }
 

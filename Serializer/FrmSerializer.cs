@@ -1,14 +1,11 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.Serialization.Formatters.Soap;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace Serializer
 {
@@ -73,8 +70,6 @@ namespace Serializer
 
         }
 
-
-
         private void rdSave_CheckedChange(object sender, EventArgs e)
         {
             RadioButton rdBttnSave = (RadioButton)sender;
@@ -105,10 +100,61 @@ namespace Serializer
                 case SerializationType.Binary:
                     sfdSave.DefaultExt = "*.dat";
                     sfdSave.Filter = "Data files (*.dat)|*.dat|All files (*.*)|*.*";
+
+                    if (sfdSave.ShowDialog() == DialogResult.OK)
+                    {
+                        st = File.Create(sfdSave.FileName);
+                        BinaryFormatter bf = new BinaryFormatter();
+
+                        try
+                        {
+                            bf.Serialize(st, staffsToSave);
+                        }
+                        catch (Exception ex)
+                        {
+
+                            MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            
+                        }
+                    }
                     break;
                 case SerializationType.SOAP_XML:
+                    sfdSave.DefaultExt = "*.xml";
+                    sfdSave.Filter = "XML files (*.xml)|*.xml|All files (*.*)|*.*";
+
+                    if (sfdSave.ShowDialog() == DialogResult.OK)
+                    {
+                        st = File.Create(sfdSave.FileName);
+                        SoapFormatter sf = new SoapFormatter();
+                        try
+                        {
+                            sf.Serialize(st, staffsToSave.ToArray()); // SOAP szerializáció nem támogatja a generic-et.
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+
                     break;
                 case SerializationType.XML:
+                    sfdSave.DefaultExt = "*.xml";
+                    sfdSave.Filter = "XML files (*.xml)|*.xml|All files (*.*)|*.*";
+
+                    if (sfdSave.ShowDialog() == DialogResult.OK)
+                    {
+                        st = File.Create(sfdSave.FileName);
+                        XmlSerializer xs = new XmlSerializer(typeof(List<Staff>));
+                        try
+                        {
+                            xs.Serialize(st, staffsToSave);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+
                     break;
                 default:
                     break;
@@ -116,21 +162,76 @@ namespace Serializer
 
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-        private void lblLoadedContent_Click(object sender, EventArgs e)
+        private void btnLoad_Click(object sender, EventArgs e)
         {
+            lstBxLoadedContent.Items.Clear();
 
+            staffsToLoad.Clear();
+
+            Stream st = Stream.Null;
+
+            switch (loadType)
+            {
+                case SerializationType.Binary:
+                    ofdLoad.DefaultExt = "*.dat";
+                    ofdLoad.Filter = "Data files (*.dat)|*.dat|All files (*.*)|*.*";
+                    if (ofdLoad.ShowDialog() == DialogResult.OK)
+                    {
+                        st = File.OpenRead(ofdLoad.FileName);
+                        BinaryFormatter bf = new BinaryFormatter();
+                        try
+                        {
+                            staffsToLoad = (List<Staff>)bf.Deserialize(st);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                    break;
+                case SerializationType.SOAP_XML:
+                    ofdLoad.DefaultExt = "*.xml";
+                    ofdLoad.Filter = "XML files (*.xml)|*.xml|All files (*.*)|*.*";
+                    if (ofdLoad.ShowDialog() == DialogResult.OK)
+                    {
+                        st = File.OpenRead(ofdLoad.FileName);
+                        SoapFormatter sf = new SoapFormatter();
+                        try
+                        {
+                            Staff[] staffs = (Staff[])sf.Deserialize(st);
+                            staffsToLoad = staffs.ToList();
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                    break;
+                case SerializationType.XML:
+                    ofdLoad.DefaultExt = "*.xml";
+                    ofdLoad.Filter = "XML files (*.xml)|*.xml|All files (*.*)|*.*";
+                    if (ofdLoad.ShowDialog() == DialogResult.OK)
+                    {
+                        st = File.OpenRead(ofdLoad.FileName);
+                        XmlSerializer xs = new XmlSerializer(typeof(Staff[]));
+                        try
+                        {
+                            Staff[] staffs = (Staff[])xs.Deserialize(st);
+                            staffsToLoad = staffs.ToList();
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                    break;
+            }
+
+            st.Close();
+            upload(lstBxLoadedContent, staffsToLoad);
         }
+
+
+
     }
 }
