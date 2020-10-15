@@ -29,18 +29,83 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutMeFrm));
-            this.circularButton4 = new AboutMe.CircularButton();
-            this.circularButton3 = new AboutMe.CircularButton();
-            this.circularButton1 = new AboutMe.CircularButton();
-            this.circularButton2 = new AboutMe.CircularButton();
-            this.circularPictureBox1 = new AboutMe.CircularPictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.circularButton5 = new AboutMe.CircularButton();
+            this.circularPictureBox1 = new AboutMe.CircularPictureBox();
+            this.circularButton4 = new AboutMe.CircularButton();
+            this.circularButton3 = new AboutMe.CircularButton();
+            this.circularButton1 = new AboutMe.CircularButton();
+            this.circularButton2 = new AboutMe.CircularButton();
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label1.Location = new System.Drawing.Point(100, 203);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(229, 19);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "University of Dunaujvaros";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label2.Location = new System.Drawing.Point(171, 250);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 20);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "About Me";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label3.Location = new System.Drawing.Point(49, 285);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(331, 48);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Over 3 years of experience with Microsoft .NET\r\n technologies and SQL Server. Lov" +
+    "e to knoweledge as\r\n I believe in \"TO TEACHES TO LEARN\"";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.Location = new System.Drawing.Point(14, 234);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(401, 1);
+            this.panel1.TabIndex = 5;
+            // 
+            // circularButton5
+            // 
+            this.circularButton5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.circularButton5.FlatAppearance.BorderSize = 0;
+            this.circularButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.circularButton5.Image = ((System.Drawing.Image)(resources.GetObject("circularButton5.Image")));
+            this.circularButton5.Location = new System.Drawing.Point(399, 12);
+            this.circularButton5.Name = "circularButton5";
+            this.circularButton5.Size = new System.Drawing.Size(25, 25);
+            this.circularButton5.TabIndex = 9;
+            this.circularButton5.UseVisualStyleBackColor = true;
+            this.circularButton5.Click += new System.EventHandler(this.circularButton5_Click);
+            // 
+            // circularPictureBox1
+            // 
+            this.circularPictureBox1.Image = global::AboutMe.Properties.Resources.Krisztian;
+            this.circularPictureBox1.Location = new System.Drawing.Point(139, 27);
+            this.circularPictureBox1.Name = "circularPictureBox1";
+            this.circularPictureBox1.Size = new System.Drawing.Size(150, 150);
+            this.circularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.circularPictureBox1.TabIndex = 5;
+            this.circularPictureBox1.TabStop = false;
             // 
             // circularButton4
             // 
@@ -93,70 +158,6 @@
             this.circularButton2.Size = new System.Drawing.Size(45, 45);
             this.circularButton2.TabIndex = 1;
             this.circularButton2.UseVisualStyleBackColor = false;
-            // 
-            // circularPictureBox1
-            // 
-            this.circularPictureBox1.Image = global::AboutMe.Properties.Resources.Krisztian;
-            this.circularPictureBox1.Location = new System.Drawing.Point(139, 27);
-            this.circularPictureBox1.Name = "circularPictureBox1";
-            this.circularPictureBox1.Size = new System.Drawing.Size(150, 150);
-            this.circularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPictureBox1.TabIndex = 5;
-            this.circularPictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label1.Location = new System.Drawing.Point(100, 203);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(229, 19);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "University of Dunaujvaros";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(171, 250);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 20);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "About Me";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(49, 285);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(331, 48);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Over 3 years of experience with Microsoft .NET\r\n technologies and SQL Server. Lov" +
-    "e to knoweledge as\r\n I believe in \"TO TEACHES TO LEARN\"";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Gray;
-            this.panel1.Location = new System.Drawing.Point(14, 234);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(401, 1);
-            this.panel1.TabIndex = 5;
-            // 
-            // circularButton5
-            // 
-            this.circularButton5.FlatAppearance.BorderSize = 0;
-            this.circularButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circularButton5.Image = global::AboutMe.Properties.Resources.close;
-            this.circularButton5.Location = new System.Drawing.Point(399, 12);
-            this.circularButton5.Name = "circularButton5";
-            this.circularButton5.Size = new System.Drawing.Size(25, 25);
-            this.circularButton5.TabIndex = 9;
-            this.circularButton5.UseVisualStyleBackColor = true;
-            this.circularButton5.Click += new System.EventHandler(this.circularButton5_Click);
             // 
             // AboutMeFrm
             // 
