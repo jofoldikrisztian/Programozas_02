@@ -38,6 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.circularButton5 = new AboutMe.CircularButton();
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -145,12 +146,25 @@
             this.panel1.Size = new System.Drawing.Size(401, 1);
             this.panel1.TabIndex = 5;
             // 
+            // circularButton5
+            // 
+            this.circularButton5.FlatAppearance.BorderSize = 0;
+            this.circularButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.circularButton5.Image = global::AboutMe.Properties.Resources.close;
+            this.circularButton5.Location = new System.Drawing.Point(399, 12);
+            this.circularButton5.Name = "circularButton5";
+            this.circularButton5.Size = new System.Drawing.Size(25, 25);
+            this.circularButton5.TabIndex = 9;
+            this.circularButton5.UseVisualStyleBackColor = true;
+            this.circularButton5.Click += new System.EventHandler(this.circularButton5_Click);
+            // 
             // AboutMeFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(436, 444);
+            this.Controls.Add(this.circularButton5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -183,6 +197,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
+        private CircularButton circularButton5;
     }
 }
 

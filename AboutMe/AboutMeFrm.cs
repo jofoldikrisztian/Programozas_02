@@ -17,5 +17,9 @@ namespace AboutMe
             InitializeComponent();
         }
 
+        private void circularButton5_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
