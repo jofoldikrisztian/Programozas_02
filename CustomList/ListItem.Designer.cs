@@ -31,8 +31,8 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblMessage = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pctrBx = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pctrBx = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrBx)).BeginInit();
             this.SuspendLayout();
@@ -60,12 +60,19 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
-            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.pctrBx);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(139, 119);
             this.panel1.TabIndex = 2;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Maroon;
+            this.panel3.Location = new System.Drawing.Point(0, 114);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(671, 5);
+            this.panel3.TabIndex = 3;
             // 
             // pctrBx
             // 
@@ -76,19 +83,12 @@
             this.pctrBx.TabIndex = 0;
             this.pctrBx.TabStop = false;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Maroon;
-            this.panel3.Location = new System.Drawing.Point(0, 111);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(323, 11);
-            this.panel3.TabIndex = 3;
-            // 
             // ListItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.lblTitle);
